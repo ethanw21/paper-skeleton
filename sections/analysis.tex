@@ -1,0 +1,11 @@
+\section{Analysis}\label{sec:analysis}
+For our named entity recognition analysis, we opted to use Flair's large 4 class model, which is based on FLERT \cite{schweter2020flert}. 
+For sentiment analysis, we used a roBERTa-base model trained on 58 million tweets, based on the TweetEval benchmark \cite{DBLP:journals/corr/abs-2010-12421} for tweet classification.
+Before analyzing our tweets, we had to preprocess the text to remove usernames, urls, and other unecessary information. For our preprocessing, we used the library tweet-preprocessor. We iterated through all of the data we collected 
+and used the library's clean() function on the text for every tweet object. After this process, we iterated through all of the data again, this time performing our analysis using the models
+described previously. Flair's NER model was able to detect organizations, locations, and people mentioned in tweets. It also picked out some other words that did not fit those criteria, but were still
+determined to be important and labeled them as miscellaneous. An example of a detectable location is 'Ukraine', while the word 'Ukrainian' was labelled as miscellaneous. We saved the top 10 most commonly found 
+people, places, organizations, and miscellaneous items for the censored tweets as well as the sample data for each country. Our sentiment analysis returned three numbers between zero and one for every tweet. Each one was a rating
+for the positivity, neutrality, or negativity of the text. For example, a strongly negative tweet would have positivity and neutrality scores close to zero, while the negativity score would be close to 1. We saved these three scores for every tweet,
+and then averaged out the scores for the censored and random data for each country. We also performed a t-test on the positive, negative, and neutral scores of the random and censored data to compare them and determine if there is a statistically significant
+difference between the two datasets.

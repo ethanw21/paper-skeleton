@@ -1,4 +1,11 @@
 \section{Introduction}\label{sec:intro}
-Many countries send takedown requests to Twitter, and very little is definitively known 
-about them on a macro level: neither the scope of such censorship, nor the content of these censored tweets.
+As traditional media has been digitized and moved online, governments around the world have implemented new strategies to censor
+unwanted content in their region. Many of these approaches involve a government filtering content by ip address or by analyzing traffic,
+but social media platforms have given rise to newer methods of content moderation. Governments can now send requests directly to social media
+platforms requesting for certain content to be blocked for their citizens. While the takedown process itself is known, very little is known about the criteria
+countries use for taking down content on online platforms. We decided to focus our project on the social media platform, Twitter. We found a publicly accesisble
+dataset of 583,000 tweets \cite{DBLP:journals/corr/abs-2101-05919} that were censored in various countries between 2012 and 2020. In this paper, we use these tweet IDs
+to download the full tweet data from Twitter's api for all 583,000 tweets. This data contains the full text of the tweet as well as metadata including
+the countries that tweet is censored in. Using this information, we analyze the text using several machine learned models for named entity recognition and sentiment analysis. We then analyze a random sample of twitter data to compare with our censored tweets. Ultimately we hope that the differences found in this comparison
+will illustrate the criteria certain countries use to determine which tweets to censor.
 

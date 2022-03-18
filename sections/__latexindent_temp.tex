@@ -1,0 +1,372 @@
+\section{Results}\label{sec:results}
+First, here is a table showing the average values for our sentiment analysis scores as well as the p-values calculated from our t-test. 
+The column Censored shows the average score for our censored data while the column Sample shows the average score of our random data. The P-Value
+column shows the P-Value calculated from a t-test comparing the censored and sampled data for a given score category.
+After this table, there is another that displays the top ten items from all of the classes of our named entity recognition for both of our datasets.
+We begin with the information for France:
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||} 
+     \hline
+     Score Category & Censored & Sample & P-Value \\ [0.5ex] 
+     \hline\hline
+     Positive & 0.026 & 0.0404 & 2.2e-13\\ 
+     \hline
+     Neutral & 0.211 & 3.52 & 0.768 \\
+     \hline
+     Negative & 0.763 & 0.75 & 0.089 \\
+     \hline
+    \end{tabular}
+\end{center}
+
+Censored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Trump'& 'America' & 'CAIR' & 'Jews' \\ 
+     \hline
+     'Allah' & 'Germany' & 'ISIS' & 'Islamic' \\
+     \hline
+     'God' & 'France' & 'HAMAS' & 'Muslim' \\
+     \hline
+     'Merkel' & 'Europe' & 'Muslim Brotherhood' & 'Muslims' \\
+     \hline
+     'Salvini' & 'UK' & 'Twitter' & 'Islam' \\
+     \hline
+     'Ilhan Omar' & 'Israel' & 'FBI' & 'Christians' \\
+     \hline
+     'Muhammad' & 'USA' & 'Hamas' & 'Sharia' \\
+     \hline
+     'Hitler' & 'U.S.' & 'EU' & 'Jewish' \\
+     \hline
+     'Obama' & 'Italy' & 'CNN' & 'German' \\
+     \hline
+     'Rashida Tlaib' & 'US' & 'Libs' & 'Christian' \\
+    \end{tabular}}
+\end{center}
+
+Uncensored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Ruto'& 'India' & 'Vogue Koreas' & 'Russian' \\ 
+     \hline
+     'jungkook' & 'USA' & 'INOX' & 'Indian' \\
+     \hline
+     'God' & 'Russia' & 'RT' & 'Pico' \\
+     \hline
+     'Tae' & 'RUSSIA' & 'NFT' & 'Group of the year' \\
+     \hline
+     'Putin' & 'New York' & 'Discord' & 'Fandom of the year' \\
+     \hline
+     'Tom Brady' & 'Europe' & 'Girl' & 'return of superman' \\
+     \hline
+     'Jisoo' & 'Central America' & 'YTIn' & 'Barbies' \\
+     \hline
+     'chan' & 'Philippines' & 'Youku' & 'Twitter' \\
+     \hline
+     'ekneuzmo' & 'US' & 'skz' & 'Breaking Dawn' \\
+     \hline
+     'sheytan' & 'Indy' & 'Mel0n' & 'Dusty Pink' \\
+    \end{tabular}}
+\end{center}
+
+Germany:
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||} 
+     \hline
+     Score Category & Censored & Sample & P-Value \\ [0.5ex] 
+     \hline\hline
+     Positive & 0.029 & 0.038 & 1.88e-22 \\ 
+     \hline
+     Neutral & 0.219 & 0.842 & 1.14e-5 \\
+     \hline
+     Negative & 0.753 & 0.756 & 0.265 \\
+     \hline
+    \end{tabular}
+\end{center}
+
+Censored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Trump'& 'America' & 'CAIR' & 'Islamic' \\ 
+     \hline
+     'Allah' & 'Germany' & 'ISIS' & 'Islam' \\
+     \hline
+     'God' & 'France' & 'Muslim Brotherhood' & 'Jews' \\
+     \hline
+     'Merkel' & 'Europe' & 'HAMAS' & 'Muslim' \\
+     \hline
+     'Mohammad' & 'UK' & 'Twitter' & 'Sharia' \\
+     \hline
+     'Hitler' & 'Israel' & 'FBI' & 'Muslims' \\
+     \hline
+     'Salvini' & 'USA' & 'EU' & 'Christians' \\
+     \hline
+     'Muhammad' & 'U.S.' & 'Hamas' & 'German' \\
+     \hline
+     'Obama' & 'Italy' & 'UN' & 'Jewish' \\
+     \hline
+     'Ilhan Omar' & 'US' & 'CNN' & 'Christian' \\
+    \end{tabular}}
+\end{center}
+
+Uncensored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'God'& 'Russia' & 'RT' & 'IDR' \\ 
+     \hline
+     'KAMLE JODI' & 'Ukraine' & 'JT' & 'Group of the year' \\
+     \hline
+     'Putin' & 'China' & 'US' & 'Russian' \\
+     \hline
+     'JT' & 'UK' & 'India' & 'American' \\
+     \hline
+     'Trump' & 'India' & 'China' & 'Ukrainian' \\
+     \hline
+     'LISA CHIVAS' & 'US' & 'Kyiv' & 'Fandom of the year' \\
+     \hline
+     'Tom Brady' & 'MINS' & 'Kashmir' & 'White Day' \\
+     \hline
+     'Louis' & 'Turkey' & 'USA' & 'Indian' \\
+     \hline
+     'Biden' & 'Texas' & 'America' & 'ANGELIC' \\
+     \hline
+     'jungkook' & 'USA' & 'Uganda' & 'Kashmir Files' \\
+    \end{tabular}}
+\end{center}
+
+India:
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||} 
+     \hline
+     Score Category & Censored & Sample & P-Value \\ [0.5ex] 
+     \hline\hline
+     Positive & 0.031 & 0.042 & 4.77e-6 \\ 
+     \hline
+     Neutral & 0.214 & 2.76 & 0.264 \\
+     \hline
+     Negative & 0.755 & 0.752 & 0.741 \\
+     \hline
+    \end{tabular}
+\end{center}
+
+Censored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Modi'& 'India' & 'RSS' & 'Indian' \\ 
+     \hline
+     'Trump' & 'Pakistan' & 'UN' & 'Kashmiri' \\
+     \hline
+     'God' & 'Kashmir' & 'RAW' & 'Muslims' \\
+     \hline
+     'Bill Gates' & 'US' & 'IK' & 'Kashmiris' \\
+     \hline
+     'Allah' & 'UK' & 'Twitter' & 'Muslim' \\
+     \hline
+     'IK' & 'Israel' & 'CFL' & 'Indians' \\
+     \hline
+     'Pak' & 'USA' & 'CIA' & 'Pakistani' \\
+     \hline
+     'Zardari' & 'U.S.' & 'AJK' & 'Zionists' \\
+     \hline
+     'Gates' & 'Italy' & 'WHO' & 'Israeli' \\
+     \hline
+     'Dr MSG' & 'US' & 'TTP' & 'Afghan' \\
+    \end{tabular}}
+\end{center}
+
+Uncensored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Jesus' & 'Europe' & 'Vogue Korea' & 'Russian' \\ 
+     \hline
+     'Garibdas Ji' & 'Kyiv' & 'JISOO' & 'IDR' \\
+     \hline
+     'Louis Tomlinson' & 'INSANE' & 'Vogue Koreas' & 'Sorry' \\
+     \hline
+     'Brit' & 'DALAMPASIGAN' & 'YouTube Theater' & 'RELEASENCT DREAM - The nd Album' \\
+     \hline
+     'God' & 'Melitopol' & 'Congress' & 'Glitch Mode' \\
+     \hline
+     'JJ Guirella' & 'Miami' & 'FBA' & 'Spider-Man: No Way Home Toms Journey' \\
+     \hline
+     'Justin Bieber' & 'Ever' & 'Facebook' & 'BE WITH ME' \\
+     \hline
+     'Elon Musk' & 'london' & 'RT' & 'Scandinavian' \\
+     \hline
+     'Tom' & 'Ghana' & 'Nice' & 'Viking' \\
+     \hline
+     'John Cleese' & 'MIAMI' & 'BUMZU' & 'Pro-Kremlin' \\
+    \end{tabular}}
+\end{center}
+
+Russia:
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||} 
+     \hline
+     Score Category & Censored & Sample & P-Value \\ [0.5ex] 
+     \hline\hline
+     Positive & 0.029 & 0.038 & 2.23e-20 \\ 
+     \hline
+     Neutral & 0.213 & 0.319 & 0.003 \\
+     \hline
+     Negative & 0.758 & 0.759 & 0.851 \\
+     \hline
+    \end{tabular}
+\end{center}
+
+Censored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Allah'& 'US' & 'Pinnacle' & 'Muslims' \\ 
+     \hline
+     'Trump' & 'U.S.' & 'Liverpool' & 'Muslim' \\
+     \hline
+     'Putin' & 'Russia' & 'Arsenal' & 'Islam' \\
+     \hline
+     'Neymar' & 'Pakistan' & 'Real Madrid' & 'Russian' \\
+     \hline
+     'Bismillah Al-Rahman Al-Raheem' & 'England' & 'Chelsea' & 'Chechen' \\
+     \hline
+     'Jurgen Klopp' & 'Europe' & 'Bovada' & 'Dragons Slot' \\
+     \hline
+     'Khilafah' & 'India' & 'Barcelona' & 'Islamic' \\
+     \hline
+     'Naveed Butt' & 'Chechenia' & 'Manchester United' & 'Premier League' \\
+     \hline
+     'Arsene Wenger' & 'Ukraine' & 'Hizb ut Tahrir' & 'Chechens' \\
+     \hline
+     'Pep Guardiola' & 'UK' & 'Microgaming' & 'Texas Holdem' \\
+    \end{tabular}}
+\end{center}
+
+Uncensored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'God'& 'Ukraine' & 'RT' & 'IDR' \\ 
+     \hline
+     'Putin' & 'Russia' & 'JT' & 'Russian' \\
+     \hline
+     'JISOO' & 'China' & 'HRS' & 'Ukrainian' \\
+     \hline
+     'KAMLE JODI' & 'UK' & 'NFT' & 'Group of the year' \\
+     \hline
+     'JT' & 'India' & 'Congress' & 'Fandom of the year' \\
+     \hline
+     'Sakura' & 'US' & 'HOURSRT' & 'American' \\
+     \hline
+     'Louis' & 'MINS' & 'BTS' & 'Super Tuna' \\
+     \hline
+     'Jin' & 'Turkey' & 'The Group' & 'White Day' \\
+     \hline
+     'Allah' & 'Texas' & 'Twitter' & 'Turning Red' \\
+     \hline
+     'Tom Brady' & 'USA' & 'IG' & 'YouTube' \\
+    \end{tabular}}
+\end{center}
+
+Turkey:
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||} 
+     \hline
+     Score Category & Censored & Sample & P-Value \\ [0.5ex] 
+     \hline\hline
+     Positive & 0.026 & 0.039 & 1.32e-219 \\ 
+     \hline
+     Neutral & 0.224 & 0.302 & 1.24e-31 \\
+     \hline
+     Negative & 0.749 & 0.752 & 0.1002 \\
+     \hline
+    \end{tabular}
+\end{center}
+
+Censored Topics:
+\begin{center}
+    \adjustbox{max width=\columnwidth}{%
+        \begin{tabular}{||c|c|c|c||} 
+         \hline
+         People & Locations & Organizations & Misc \\ [0.5ex] 
+         \hline\hline
+         'Erdogan'& 'Turkey' & 'ISIS' & 'Turkish' \\ 
+         \hline
+         'Trump' & 'Syria' & 'SDF' & 'Kurdish' \\
+         \hline
+         'Erdogans' & 'Afrin' & 'YPG' & 'Kurds' \\
+         \hline
+         'Erdoan' & 'US' & 'daesh' & 'Turk' \\
+         \hline
+         'Assad' & 'Efrn' & 'PKK' & 'Syrian' \\
+         \hline
+         'Gulen' & 'Raqqa' & 'YPJ' & 'Turks' \\
+         \hline
+         'Fethullah Gulen' & 'Rojava' & 'Daesh' & 'Ezidi' \\
+         \hline
+         'Putin' & 'Kurdistan' & 'HDP' & 'Turkeys' \\
+         \hline
+         'Anna Campbell' & 'UK' & 'EU' & 'Russian' \\
+         \hline
+         'Enes Kanter' & 'Manbij' & 'AKP' & 'German' \\
+        \end{tabular}}
+    \end{center}
+
+Uncensored Topics:
+\begin{center}
+\adjustbox{max width=\columnwidth}{%
+    \begin{tabular}{||c|c|c|c||} 
+     \hline
+     People & Locations & Organizations & Misc \\ [0.5ex] 
+     \hline\hline
+     'Putin' & 'Ukraine' & 'RT' & 'Russian' \\ 
+     \hline
+     'God' & 'Russia' & 'JT' & 'IDR' \\
+     \hline
+     'JT' & 'US' & 'HOURSRT' & 'Ukrainian' \\
+     \hline
+     'Louis' & 'India' & 'BJP' & 'Group of the year' \\
+     \hline
+     'Tom Brady' & 'China' & 'Twitter' & 'Fandom of the year' \\
+     \hline
+     'JISOO' & 'Kyiv' & 'Congress' & 'Indian' \\
+     \hline
+     'Trump' & 'USA' & 'BTS' & 'American' \\
+     \hline
+     'Lisa' & 'Kashmir' & 'HRS' & 'Hindu' \\
+     \hline
+     'jungkook' & 'UK' & 'NFT' & 'Turning Red' \\
+     \hline
+     'Biden' & 'SEOUL' & 'IG' & 'White Day' \\
+    \end{tabular}}
+\end{center}
+
+
+
